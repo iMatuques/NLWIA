@@ -30,3 +30,5 @@ form.addEventListener("submit", async (event) => {
     content.textContent = transcription.data.result
     content.classList.remove("placeholder")
 })
+
+

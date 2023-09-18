@@ -1,0 +1,29 @@
+@import '../abstract/_variables';
+@import '../components/_base';
+
+#app {
+    @include flex-col-by-content(center);
+
+    h1 {
+        color: #996DFF;
+        margin-top: -5px;
+    }
+
+    h2 {
+        align-self: $align;
+        margin-top: 60px;
+    }
+
+    p {
+        align-self: $align;
+        text-align: justify;
+        width: 512px;
+        margin-top: -5px;
+
+        .placeholder {
+            color: #7C7C8A;
+            user-select: none;
+        }
+    }
+}
+

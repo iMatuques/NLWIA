@@ -1,0 +1,25 @@
+@import '../abstract/_variables';
+
+@mixin flex-col-by-content($content: start) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: $content;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+
+    background-color: $bg-color;
+    color: $font-color;
+    font-family: $ft-family;
+   
+    @include flex-col-by-content(center);
+}
+
+
